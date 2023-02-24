@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230224022054">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<svg display="none">
+			<symbol id="geo" viewBox="0 0 1000 1000">
+				<g>
+					<g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+						<path d="M4655.4,4990.8c-462.7-48.5-870.3-167.5-1280.2-372.4c-1007-504.6-1712-1447.6-1919.2-2566.9c-57.3-299.7-57.3-1015.8-2.2-1289C1755.8-727,2828.8-2478.7,4613.6-4400c198.3-213.7,374.6-390,390-390c15.4,0,178.5,160.8,361.4,359.2C7198.2-2450,8337.3-552.9,8553.3,883.7c88.1,590.5,2.2,1282.4-233.6,1872.9C7727,4239.5,6222.1,5156.1,4655.4,4990.8z M5497.1,3318.5c561.9-158.6,1000.4-526.6,1251.5-1046.6c191.7-394.4,240.2-819.7,143.2-1227.3C6698,224.9,5946.6-414.1,5122.6-464.7c-1075.3-63.9-2022.7,821.9-2024.9,1899.3c-2.2,282,37.5,489.2,134.4,724.9c174.1,418.6,489.2,769,888,991.5c154.2,85.9,414.2,178.5,592.7,209.3C4895.6,3393.4,5312.1,3371.3,5497.1,3318.5z" />
+						<path d="M4763.4,2833.7c-418.6-83.7-804.2-370.2-995.9-738.1c-134.4-257.8-167.5-412-156.4-716.1c6.6-202.7,19.8-286.4,68.3-418.7C3888.7,372.5,4474.8-15.3,5093.9,20c359.2,22,636.8,154.2,914.4,434.1c286.4,286.4,420.8,590.5,420.8,958.5c0,423.1-204.9,854.9-542,1134.7C5600.7,2785.2,5124.8,2906.4,4763.4,2833.7z" />
+					</g>
+				</g>
+			</symbol>
+		</svg>
+		<svg display="none">
+			<symbol id="phone" viewBox="0 0 29 29">
+				<g>
+					<path d="m20.914 17.743-2.091 1.178a1.319 1.319 0 0 1-1.58-.217l-6.979-6.979a1.32 1.32 0 0 1-.217-1.58l1.178-2.091a1.978 1.978 0 0 0-.325-2.37L7.766 2.55a1.978 1.978 0 0 0-2.798 0L3.545 3.972a5.276 5.276 0 0 0-.793 6.446l.714 1.19a41.36 41.36 0 0 0 14.946 14.631l.141.081c2.102 1.201 4.699.851 6.382-.831l1.486-1.486a1.978 1.978 0 0 0 0-2.798l-3.136-3.136a1.978 1.978 0 0 0-2.371-.326z" />
+				</g>
+			</symbol>
+		</svg>
+		<svg display="none">
+			<symbol id="quality" viewBox="0 0 256 256">
+				<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+					<path d="M 89 75.042 H 71.952 V 13.958 c 0 -5.527 -4.497 -10.024 -10.024 -10.024 H 23.657 H 10.024 C 4.497 3.934 0 8.43 0 13.958 c 0 0.552 0.448 1 1 1 h 10.048 v 61.084 c 0 5.527 4.497 10.024 10.024 10.024 h 58.904 C 85.503 86.066 90 81.569 90 76.042 C 90 75.489 89.553 75.042 89 75.042 z M 10.024 5.934 h 13.633 h 32.27 c -2.189 1.642 -3.688 4.157 -3.973 7.024 H 2.062 C 2.556 9.003 5.938 5.934 10.024 5.934 z M 21.072 84.066 c -4.424 0 -8.024 -3.6 -8.024 -8.024 V 14.958 h 39.856 c 0.553 0 1 -0.448 1 -1 c 0 -4.424 3.6 -8.024 8.023 -8.024 c 4.425 0 8.024 3.6 8.024 8.024 v 62.084 c 0 3.284 1.594 6.195 4.041 8.024 H 21.072 z M 79.976 84.066 c -0.266 0 -0.53 -0.014 -0.789 -0.04 c -0.087 -0.008 -0.171 -0.025 -0.257 -0.036 c -0.172 -0.023 -0.344 -0.045 -0.512 -0.078 c -0.099 -0.02 -0.196 -0.047 -0.294 -0.07 c -0.151 -0.036 -0.301 -0.071 -0.448 -0.116 c -0.102 -0.031 -0.202 -0.067 -0.302 -0.102 c -0.139 -0.048 -0.277 -0.096 -0.413 -0.151 c -0.1 -0.041 -0.198 -0.086 -0.296 -0.131 c -0.13 -0.059 -0.26 -0.12 -0.386 -0.186 c -0.097 -0.05 -0.191 -0.104 -0.286 -0.158 c -0.122 -0.07 -0.242 -0.143 -0.36 -0.219 c -0.092 -0.059 -0.182 -0.121 -0.272 -0.184 c -0.114 -0.081 -0.226 -0.165 -0.336 -0.251 c -0.085 -0.067 -0.17 -0.135 -0.252 -0.205 c -0.107 -0.092 -0.211 -0.188 -0.313 -0.285 c -0.077 -0.074 -0.155 -0.147 -0.23 -0.223 c -0.1 -0.103 -0.196 -0.211 -0.29 -0.319 c -0.068 -0.078 -0.138 -0.155 -0.203 -0.235 c -0.095 -0.118 -0.184 -0.241 -0.273 -0.365 c -0.056 -0.078 -0.115 -0.153 -0.168 -0.233 c -0.094 -0.14 -0.179 -0.286 -0.263 -0.433 c -0.04 -0.069 -0.084 -0.136 -0.122 -0.207 c -0.237 -0.44 -0.435 -0.905 -0.588 -1.39 c -0.021 -0.068 -0.036 -0.139 -0.056 -0.207 c -0.05 -0.176 -0.099 -0.353 -0.137 -0.534 c -0.019 -0.089 -0.031 -0.181 -0.047 -0.271 c -0.023 -0.131 -0.044 -0.262 -0.06 -0.394 h 15.917 C 87.444 80.996 84.062 84.066 79.976 84.066 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 50.575 30.072 c 0.968 -1.322 1.061 -3.024 0.241 -4.443 s -2.343 -2.185 -3.969 -2.013 c -0.901 0.1 -1.755 -0.395 -2.121 -1.224 c -0.661 -1.499 -2.089 -2.43 -3.727 -2.43 s -3.066 0.931 -3.727 2.43 c -0.367 0.83 -1.22 1.323 -2.122 1.224 c -1.638 -0.178 -3.149 0.595 -3.968 2.013 s -0.727 3.121 0.241 4.443 h 0 c 0.536 0.732 0.536 1.716 0 2.449 c -0.967 1.322 -1.06 3.024 -0.241 4.443 c 0.739 1.279 2.046 2.021 3.489 2.03 v 12.315 c 0 0.621 0.367 1.186 0.934 1.438 c 0.567 0.253 1.231 0.146 1.694 -0.27 l 3.749 -3.387 l 3.749 3.387 c 0.295 0.266 0.673 0.405 1.056 0.405 c 0.215 0 0.433 -0.044 0.638 -0.135 c 0.567 -0.253 0.935 -0.817 0.935 -1.438 v -12.31 c 1.401 -0.04 2.669 -0.786 3.39 -2.035 c 0.819 -1.419 0.727 -3.121 -0.241 -4.443 C 50.039 31.789 50.039 30.805 50.575 30.072 z M 42.104 47.348 c -0.602 -0.543 -1.508 -0.543 -2.109 0 l -3.322 3.001 V 39.452 c 0.247 0.202 0.465 0.443 0.6 0.75 c 0.661 1.499 2.089 2.43 3.727 2.43 s 3.066 -0.931 3.727 -2.43 c 0.154 -0.349 0.406 -0.62 0.7 -0.831 v 10.979 L 42.104 47.348 z M 48.962 33.703 c 0.5 0.683 0.546 1.528 0.122 2.261 c -0.423 0.733 -1.177 1.119 -2.02 1.025 c -1.774 -0.189 -3.448 0.773 -4.167 2.406 c -0.341 0.774 -1.051 1.237 -1.897 1.237 s -1.556 -0.462 -1.897 -1.237 c -0.659 -1.494 -2.118 -2.43 -3.719 -2.43 c -0.148 0 -0.298 0.008 -0.448 0.024 c -0.842 0.093 -1.596 -0.292 -2.02 -1.025 c -0.423 -0.733 -0.377 -1.579 0.123 -2.261 c 1.054 -1.439 1.054 -3.373 0 -4.812 c -0.5 -0.683 -0.546 -1.528 -0.123 -2.261 c 0.424 -0.733 1.179 -1.114 2.02 -1.025 c 1.773 0.192 3.448 -0.773 4.168 -2.406 c 0.341 -0.774 1.051 -1.237 1.897 -1.237 s 1.556 0.462 1.897 1.237 c 0.719 1.632 2.392 2.599 4.167 2.406 c 0.842 -0.09 1.597 0.292 2.02 1.025 c 0.424 0.733 0.378 1.579 -0.122 2.261 C 47.908 30.33 47.908 32.264 48.962 33.703 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 41 35.586 c -2.481 0 -4.5 -2.019 -4.5 -4.5 s 2.019 -4.5 4.5 -4.5 s 4.5 2.019 4.5 4.5 S 43.481 35.586 41 35.586 z M 41 28.586 c -1.378 0 -2.5 1.122 -2.5 2.5 s 1.122 2.5 2.5 2.5 s 2.5 -1.122 2.5 -2.5 S 42.378 28.586 41 28.586 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 58.459 63.461 H 22.657 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 35.802 c 0.553 0 1 0.447 1 1 S 59.012 63.461 58.459 63.461 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 58.459 73.461 H 45 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 13.459 c 0.553 0 1 0.447 1 1 S 59.012 73.461 58.459 73.461 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+				</g>
+			</symbol>
+		</svg>
+		<svg display="none">
+			<symbol id="cash" viewBox="0 0 256 256">
+				<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+					<path d="M 42.769 69.743 H 21.635 c -0.552 0 -1 -0.447 -1 -1 V 7.413 c 0 -0.552 0.448 -1 1 -1 h 33.341 c 0.553 0 1 0.448 1 1 v 44.884 c 0 0.553 -0.447 1 -1 1 s -1 -0.447 -1 -1 V 8.413 H 22.635 v 59.331 h 20.134 c 0.552 0 1 0.447 1 1 S 43.321 69.743 42.769 69.743 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 38.305 48.615 c -5.307 0 -9.625 -4.318 -9.625 -9.625 s 4.317 -9.625 9.625 -9.625 s 9.625 4.317 9.625 9.625 S 43.612 48.615 38.305 48.615 z M 38.305 31.366 c -4.204 0 -7.625 3.42 -7.625 7.625 s 3.42 7.625 7.625 7.625 s 7.625 -3.42 7.625 -7.625 S 42.509 31.366 38.305 31.366 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 29.73 58.593 c -0.552 0 -1 -0.447 -1 -1 v -7.587 c 0 -0.553 0.448 -1 1 -1 s 1 0.447 1 1 v 7.587 C 30.73 58.146 30.283 58.593 29.73 58.593 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 46.93 28.975 c -0.553 0 -1 -0.448 -1 -1 v -6.669 c -2.496 -0.422 -4.47 -2.397 -4.893 -4.893 h -5.414 c -0.422 2.496 -2.397 4.471 -4.893 4.893 v 6.669 c 0 0.552 -0.448 1 -1 1 s -1 -0.448 -1 -1 v -7.586 c 0 -0.552 0.448 -1 1 -1 c 2.192 0 3.976 -1.784 3.976 -3.977 c 0 -0.552 0.448 -1 1 -1 h 7.247 c 0.552 0 1 0.448 1 1 c 0 2.193 1.784 3.977 3.976 3.977 c 0.553 0 1 0.448 1 1 v 7.586 C 47.93 28.527 47.482 28.975 46.93 28.975 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 60.499 44.146 c -0.553 0 -1 -0.448 -1 -1 c 0 -17.598 1.384 -31.08 4.229 -41.146 H 31.722 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 33.341 c 0.316 0 0.615 0.15 0.804 0.405 c 0.188 0.254 0.245 0.583 0.153 0.886 c -3.042 10.003 -4.521 23.695 -4.521 41.855 C 61.499 43.699 61.052 44.146 60.499 44.146 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+					<path d="M 68.365 78.001 h -1.661 c 0.276 -2.665 0.675 -5.034 1.07 -7.315 c 0.812 -4.688 1.513 -8.738 0.79 -13.778 c -0.492 -3.425 -2.791 -6.343 -5.955 -7.596 l -2.574 -1.164 c -0.504 -0.228 -1.097 -0.004 -1.323 0.499 c -0.228 0.503 -0.004 1.096 0.499 1.323 l 2.618 1.183 c 2.543 1.008 4.365 3.322 4.755 6.039 c 0.679 4.727 0.003 8.632 -0.78 13.153 c -0.41 2.374 -0.827 4.841 -1.109 7.656 H 46.61 c 0.735 -3.535 2.417 -6.688 4.824 -8.966 c 0.198 -0.188 0.312 -0.449 0.313 -0.723 s -0.109 -0.535 -0.307 -0.725 l -5.465 -5.256 c -0.435 -0.381 -0.935 -0.668 -1.485 -0.854 c -0.042 -0.014 -0.084 -0.024 -0.127 -0.033 l -5.427 -1.058 c -1.682 -0.596 -2.643 -2.341 -2.24 -4.085 l 0.168 -0.729 c 0.41 -1.776 2.151 -2.946 4.009 -2.666 l 5.244 0.457 c 0.354 0.055 0.697 0.192 0.988 0.395 l 10.124 7.133 c 0.454 0.317 1.076 0.211 1.394 -0.241 s 0.21 -1.075 -0.241 -1.394 L 48.253 52.12 c -0.544 -0.379 -1.177 -0.633 -1.896 -0.741 l -5.244 -0.457 c -2.829 -0.436 -5.554 1.408 -6.198 4.201 l -0.168 0.729 c -0.639 2.772 0.914 5.546 3.612 6.45 c 0.042 0.014 0.083 0.025 0.126 0.033 l 5.425 1.058 c 0.276 0.101 0.526 0.247 0.713 0.41 l 4.699 4.521 c -2.398 2.571 -4.047 5.95 -4.747 9.676 h -1.962 c -0.552 0 -1 0.447 -1 1 v 10 c 0 0.553 0.448 1 1 1 h 25.753 c 0.553 0 1 -0.447 1 -1 v -9.999 C 69.365 78.448 68.918 78.001 68.365 78.001 z M 67.365 88 H 43.612 v -7.999 h 23.753 V 88 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+				</g>
+			</symbol>
+		</svg>
+		<svg display="none">
+			<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+				<path d="M 45 90 c -1.062 0 -2.043 -0.561 -2.583 -1.475 l -4.471 -7.563 c -9.222 -15.591 -17.933 -30.317 -20.893 -36.258 c -2.086 -4.277 -3.138 -8.852 -3.138 -13.62 C 13.916 13.944 27.86 0 45 0 c 17.141 0 31.085 13.944 31.085 31.084 c 0 4.764 -1.051 9.339 -3.124 13.596 c -0.021 0.042 -0.042 0.083 -0.063 0.124 c -3.007 6.005 -11.672 20.654 -20.843 36.159 l -4.472 7.563 C 47.044 89.439 46.062 90 45 90 z M 45 6 C 31.168 6 19.916 17.253 19.916 31.084 c 0 3.848 0.847 7.539 2.518 10.969 c 2.852 5.721 11.909 21.033 20.667 35.839 L 45 81.104 l 1.89 -3.196 c 8.763 -14.813 17.823 -30.131 20.687 -35.879 c 0.012 -0.022 0.023 -0.045 0.035 -0.067 c 1.642 -3.406 2.474 -7.065 2.474 -10.877 C 70.085 17.253 58.832 6 45 6 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+				<path d="M 45 44.597 c -8.076 0 -14.646 -6.57 -14.646 -14.646 S 36.924 15.306 45 15.306 c 8.075 0 14.646 6.57 14.646 14.646 S 53.075 44.597 45 44.597 z M 45 21.306 c -4.767 0 -8.646 3.878 -8.646 8.646 s 3.878 8.646 8.646 8.646 c 4.768 0 8.646 -3.878 8.646 -8.646 S 49.768 21.306 45 21.306 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+			</g>
+		</svg>
+
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<div class="header__top">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" width="110"></picture>
+							</a>
+						</div>
+						<div class="header__geolocation">
+							<a href="#">
+								<svg width="20" height="30">
+									<use xlink:href="#geo"></use>
+								</svg>
+								<address>м. Бориспіль, вул Головатого 1</address>
+							</a>
+						</div>
+						<div class="header__phone">
+							<a href="tel:+380964196574">
+								<svg width="15" height="21">
+									<use xlink:href="#phone"></use>
+								</svg>
+								<p>+38 (096) 419 65 74</p>
+							</a>
+							<button class="header__callback button" data-da=".header__list, 768">Вам зателефонувати?</button>
+						</div>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item"><a href="#" class="header__link">Головна</a></li>
+							<li class="header__item"><a href="#" class="header__link">Наші послуги</a></li>
+							<li class="header__item"><a href="#" class="header__link">Акції</a></li>
+							<li class="header__item"><a href="#" class="header__link">Спеціалісти</a></li>
+							<li class="header__item"><a href="#" class="header__link">Відгуки</a></li>
+							<li class="header__item"><a href="#" class="header__link">FAQ</a></li>
+							<li class="header__item"><a href="#" class="header__link">Контакти</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		' <main class="page">
+
+
+			<!-- First blocka after header -->
+			<section class="intro">
+				<div class="intro__container">
+					<div class="intro__text">
+						<h1 class="intro__title">
+							Допомагаємо вам бути найкращими версіями себе!
+						</h1>
+						<p class="intro__desc">
+							Ми дбайливо стежимо за вашою красою та комфортом, щоб ви почувалися прекрасно у всіх
+							аспектах.
+						</p>
+						<button class="button">Записатися</button>
+					</div>
+					<div class="intro__img">
+						<picture><source srcset="img/introGirl.webp" type="image/webp"><img src="img/introGirl.png" alt=""></picture>
+					</div>
+				</div>
+			</section>
+
+			<!-- Benefits to work with us -->
+			<section class="benefits">
+				<section class="benefits__container">
+					<h2 class="benefits__title">
+						Наші переваги:
+					</h2>
+					<div class="benefits__list">
+						<div class="benefits__item">
+							<svg width="80" height="100">
+								<use xlink:href="#quality"></use>
+							</svg>
+							<h3 class="benefits__subtitle">
+								Продукція
+							</h3>
+							<p class="benefits__desc">
+								Ми використовуємо тільки якісну та сертифіковану косметику від
+								провідних світових виробників, щоб забезпечити найкращі результати та задоволення наших
+								клієнтів.
+							</p>
+						</div>
+						<div class="benefits__item">
+							<svg width="80" height="100">
+								<use xlink:href="#cash"></use>
+							</svg>
+							<h3 class="benefits__subtitle">
+								Розумні ціни
+							</h3>
+							<p class="benefits__desc">
+								Наші ціни розумні та нижчі від ринку, ми дбайливо підбираємо їх, щоб забезпечити максимальну вигоду за доступну ціну.
+							</p>
+						</div>
+						<div class="benefits__item">
+							<svg width="80" height="100">
+								<use xlink:href="#geo"></use>
+							</svg>
+							<h3 class="benefits__subtitle">
+								Зручне розташування
+							</h3>
+							<p class="benefits__desc">
+								Наш салон знаходиться в зручному місці з легким доступом до громадського транспорту та автомобільних доріг.
+							</p>
+						</div>
+						<div class="benefits__item">
+							<svg width="80" height="100">
+								<use xlink:href="#geo"></use>
+							</svg>
+							<h3 class="benefits__subtitle">
+								Зручне розташування
+							</h3>
+							<p class="benefits__desc">
+								Наш салон знаходиться в зручному місці з легким доступом до громадського транспорту та автомобільних доріг.
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230224022054"></script>
+</body>
+
+</html>
