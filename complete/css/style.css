@@ -341,9 +341,12 @@ h6 {
   padding: 20px 70px;
 }
 
+.no-webp .benefits{
+  background: url("../img/cosmetic.png") right bottom no-repeat rgb(255, 6, 98); }
+
 .benefits {
   padding: 35px 0;
-  background-color: rgb(255, 6, 98);
+  background-attachment: fixed;
 }
 
 .benefits__title {
@@ -379,7 +382,9 @@ h6 {
   min-width: 270px;
 }
 
-.benefits svg {
+.benefits__item svg {
+  width: 80px;
+  height: 100px;
   margin-bottom: 10px;
 }
 
@@ -499,6 +504,7 @@ h6 {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    z-index: 4;
   }
 
   .menu-open .header__list {
@@ -590,6 +596,11 @@ h6 {
   .benefits__item {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+    padding: 20px;
+  }
+
+  .benefits__subtitle {
+    font-size: 22px;
   }
 }
 
@@ -602,6 +613,29 @@ h6 {
 @media (max-width: 35.625em) {
   .intro__title {
     font-size: 28px;
+  }
+
+  .benefits {
+    padding: 15px 0;
+  }
+
+  .benefits__title {
+    font-size: 24px;
+  }
+
+  .benefits__item svg {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .benefits__subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .benefits__desc {
+    font-size: 14px;
   }
 }
 
@@ -620,8 +654,17 @@ h6 {
     font-size: 20px;
   }
 
+  .benefits__title {
+    font-size: 18px;
+  }
+
   .benefits__item {
     min-width: 100%;
+  }
+
+  .benefits__subtitle {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }
 
@@ -630,3 +673,5 @@ h6 {
     display: none;
   }
 }
+
+.webp .benefits{ background: url(../img/cosmetic.webp) right bottom no-repeat rgb(255, 6, 98); }
