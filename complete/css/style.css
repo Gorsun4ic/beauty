@@ -848,10 +848,12 @@ h3 {
 }
 
 .no-webp .callback{
-  background: url("../img/callbackBackground.jpg") 0 0 repeat, #e7e7e5; }
+  background: url("../img/callbackBackground.jpg") 0 0 repeat, #e7e7e5; 
+  background-size: cover;
+}
 
 .callback {
-  background-size: 100%;
+  background-size: cover;
   padding: 25px 0;
 }
 
@@ -940,7 +942,9 @@ h3 {
 }
 
 .no-webp .reviews__slide.swiper-slide::after{
-  background: url("../img/phone.png") 0 0 no-repeat; }
+  background: url("../img/phone.png") 0 0 no-repeat;
+  background-size: cover;
+}
 
 .reviews__slide.swiper-slide::after {
   content: "";
