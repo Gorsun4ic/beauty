@@ -704,7 +704,7 @@ h3 {
 
 .benefits {
   padding: 35px 0;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   margin-bottom: 25px;
 }
 
@@ -849,11 +849,11 @@ h3 {
 
 .no-webp .callback{
   background: url("../img/callbackBackground.jpg") 0 0 repeat, #e7e7e5; 
-  background-size: cover;
+  background-size: cover !important;
 }
 
 .callback {
-  background-size: cover;
+  background-size: cover !important;
   padding: 25px 0;
 }
 
@@ -943,12 +943,12 @@ h3 {
 
 .no-webp .reviews__slide.swiper-slide::after{
   background: url("../img/phone.png") 0 0 no-repeat;
-  background-size: cover;
+  background-size: cover !important;
 }
 
 .reviews__slide.swiper-slide::after {
   content: "";
-  background-size: cover;
+  background-size: cover !important;
   position: absolute;
   width: 300px;
   height: 100%;
